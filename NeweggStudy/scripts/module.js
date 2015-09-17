@@ -1,19 +1,20 @@
 class ClassA{
   constructor(){
     for (var variable in arguments[0]) {
-      console.log(variable);
-      this[variable] = arguments[variable];
+      this[variable] = arguments[0][variable];
     }
   }
 
   extend(){
-    function classB(){};
+    class classB{}
+
     for (var variable in this) {
-      if (object.hasOwnProperty(variable)) {
-        classB.prototype.variable = this.variable;
-      }
+      classB.prototype[variable] = this.variable;
     }
-    console.log(typeof(classB));
+
+    for (var variable in arguments[0]) {
+      classB.prototype[variable] = arguments[0][variable];
+    }
     return classB;
   }
 }
