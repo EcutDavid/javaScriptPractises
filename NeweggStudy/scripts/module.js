@@ -8,11 +8,11 @@ class ClassA{
   extend(){
     class classB{}
 
-    for (var variable in this) {
+    for (let variable in this) {
       classB.prototype[variable] = this.variable;
     }
 
-    for (var variable in arguments[0]) {
+    for (let variable in arguments[0]) {
       classB.prototype[variable] = arguments[0][variable];
     }
     return classB;

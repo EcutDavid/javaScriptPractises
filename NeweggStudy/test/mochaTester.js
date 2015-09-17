@@ -15,7 +15,7 @@ describe('test Class', function(){
       work: function(){}
     });
 
-    var jobs = new Man();
+    let jobs = new Man();
     jobs.should.be.have.properties(['say', 'work']);
   });
 });
