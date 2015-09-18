@@ -1,1 +1,1 @@
-import './reducer'
+import './store'

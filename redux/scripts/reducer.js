@@ -4,8 +4,6 @@
 //No API calls. No mutations. Just a calculation.
 
 import { VisibilityFilters, ADD_TODO, COMPLETE_TODO, SET_VISIBILITY_FILTER } from './actions';
-import { addTodo, completeTodo, setVisibilityFilter } from './actions';
-import {createStore} from 'redux'
 const { SHOW_ALL } = VisibilityFilters;
 
 const initialState = {
@@ -68,7 +66,6 @@ const initialState = {
 
 //split code logic
 function todos(state = [], action) {
-  console.log(action.payload);
   switch (action.type) {
   case ADD_TODO:
     return [...state, {
@@ -112,6 +109,4 @@ const todoApp = combineReducers({
   todos
 });
 
-let store = createStore(todoApp);
-store.dispatch(addTodo('hello'));
 export default todoApp;

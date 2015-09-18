@@ -21,13 +21,13 @@ export const VisibilityFilters = {
  */
 
 export function addTodo(text) {
-  return { type: ADD_TODO, payload: text };
+  return { type: ADD_TODO, payload: {text: text} };
 }
 
 export function completeTodo(index) {
-  return { type: COMPLETE_TODO, payload: index };
+  return { type: COMPLETE_TODO, payload: {index: index} };
 }
 
 export function setVisibilityFilter(filter) {
-  return { type: SET_VISIBILITY_FILTER, payload: filter };
+  return { type: SET_VISIBILITY_FILTER, payload: {filter: filter} };
 }
