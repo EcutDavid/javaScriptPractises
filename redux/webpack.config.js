@@ -1,6 +1,6 @@
 module.exports = {
   entry: {
-    app: ["./scripts/module.js"]
+    app: ["./scripts/index.js"]
   },
   output:{
     //not set filename like this: './build/name'!!
