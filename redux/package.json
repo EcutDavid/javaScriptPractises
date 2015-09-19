@@ -9,11 +9,14 @@
     "webpack": "^1.12.1"
   },
   "scripts": {
-    "build": "webpack -w"
+    "build": "webpack -w",
+     "dev": "webpack-dev-server --devtool eval --colors --content-base build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "redux": "^3.0.0"
+    "react": "^0.13.3",
+    "redux": "^3.0.0",
+    "webpack-dev-server": "^1.11.0"
   }
 }

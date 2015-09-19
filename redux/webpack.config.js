@@ -3,8 +3,9 @@ module.exports = {
     app: ["./scripts/module.js"]
   },
   output:{
-    path: __dirname,
-    filename: "./test/bundle.js"
+    //not set filename like this: './build/name'!!
+    path: __dirname + './build',
+    filename: "bundle.js"
   },
   module: {
   loaders: [
