@@ -23,11 +23,12 @@ app.style('color', '#666')
     .style('border', 'solid')
     .style('text-align', 'center');
 
+
 //add chart in data
 let data = [43, 8, 15, 16, 23, 42];
 d3.select(".chart")
   .selectAll("div")
-    .data(data)
+    .data(data)//bind data to selector. seletor might not include any data-binding.
   .enter().append("div")
     .style("width", function(d) { return d * 10 + "px"; })
     .text(function(d) { return d; });

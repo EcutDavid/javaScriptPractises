@@ -1,6 +1,6 @@
 console.log(__dirname);
 module.exports = {
-  entry: ["./scripts/entry.js"],
+  entry: ["./scripts/inActionChapter1.js"],
   output: {
     path: __dirname + "/build",
     filename: "bundle.js"
