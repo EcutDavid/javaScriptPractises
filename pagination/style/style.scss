@@ -1,0 +1,38 @@
+.paginationComponent{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+
+  .pagination {
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+
+  ul {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  li {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 3px;
+    border: 1px solid #e40000;
+    &.active {
+        background-color: #e40000;
+        color: #fff;
+    }
+  }
+
+  .break, .disabled,
+  .disabled a, {
+    cursor: default;
+  }
+}
